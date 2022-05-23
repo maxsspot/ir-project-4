@@ -94,6 +94,12 @@
             const theme = document.getElementById ("theme").style;
             const reviewd = document.getElementById ("rev").style;
             const back = document.getElementById ("back").style;
+	    const post = document.getElementById ("post");
+	    var hello = localStorage.getItem ("submitted");
+		
+	    if (hello == "true") {
+		    post.disabled = true;
+	    }
 
             function go_back () {
                 review.marginLeft = "-100%";
@@ -141,6 +147,9 @@
                 back.opacity = "1.0";
             }
             
+	    function protect () {
+		locaslStorage.setItem ("submitted","true");    
+	    }
         </script>
 	</body>
 </html>
