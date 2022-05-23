@@ -97,7 +97,7 @@
 	    const post = document.getElementById ("post");
 	    var hello = localStorage.getItem ("submitted");
 		
-	    if (hello == "true") {
+	    if (localStorage.getItem ("submitted") == true) {
 		    post.disabled = true;
 	    }
 
