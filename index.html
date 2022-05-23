@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <script src = "https://maxsspot.github.io/copyright-protection/protecting.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+		<title>Page Title</title>
+	</head>
+	<body oncontextmenu="return false;">
+		<nav>
+            <h1 id = "title">INSERT COIN TO CONTINUE</h1>
+            <button id = "back" onclick = "go_back()"<i class="fa-solid fa-circle-arrow-left"></i></button>
+        </nav>
+        <br>
+        <div id = "body">
+            <button onclick = "main()">Main</button>
+            <button onclick = "characters()">Characters</button>
+            <button onclick = "settings()">Setting</button>
+            <br>
+            <button>Plot</button>
+            <button>Theme</button>
+            <button onclick = "rev()">Book review</button>
+            <br>
+            <button style = "width:240px" onclick = "reviews()">Review</button>
+            <button style = "width:240px" onclick = "window.location.href='https://ir-project-game.netlify.app'">Game</button>
+        </div>
+        <div id = "review">
+            <br>
+            <h1>Review</h1>
+            <br>
+            <form name = "review" method = "POST">
+                <input placeholder = "Name.." id = "name"required />
+                <br>
+                <textarea placeholder="Review.." id = "review.." required></textarea>
+                <br>
+                <br>
+                <button id = "post">Send to me!</button>
+            </form>
+        </div>
+        <div id = "main">
+            <br>
+            <h1>Main</h1>
+            <br>
+            <p>This book has 324 pages and was written by John David Anderson.</p>
+        </div>
+        <div id = "characters">
+            <br>
+            <h1>Characters</h1>
+            <br>
+            <p>This book has many characters including: Bryan and Oz. The main character is Bryan.</p>
+        </div>
+        <div id = "setting">
+            <br>
+            <h1>Setting</h1>
+            <br>
+            <p>The setting is a neighbourhood full of similar looking houses. It also is a typical school. These two settings switch during the story.</p>
+        </div>
+        <div id = "plot">
+            <br>
+            <h1>Setting</h1>
+            <br>
+            <p>The setting is a neighbourhood full of similar looking houses. It also is a typical school. These two settings switch during the story.</p>
+        </div>
+        <div id = "theme">
+            <br>
+            <h1>Setting</h1>
+            <br>
+            <p>The theme of this story is to perservere. Brian had to pereserere throughout the whole story because he was getting bullied and his life was a video game.</p>
+        </div>
+        <div id = "rev">
+            <br>
+            <h1>Book review</h1>
+            <br>
+            <p>I rate this book 4 out of 5 coins!</p>
+            <br>
+            <img src = "https://th.bing.com/th/id/OIP.sYr2BQCohWb1TndpB43jkAHaHa?pid=ImgDet&rs=1" />
+            <img src = "https://th.bing.com/th/id/OIP.sYr2BQCohWb1TndpB43jkAHaHa?pid=ImgDet&rs=1" />
+            <img src = "https://th.bing.com/th/id/OIP.sYr2BQCohWb1TndpB43jkAHaHa?pid=ImgDet&rs=1" />
+            <img src = "https://th.bing.com/th/id/OIP.sYr2BQCohWb1TndpB43jkAHaHa?pid=ImgDet&rs=1" />
+        </div>
+        <script>
+            "use strict";
+            const review = document.getElementById ("review").style;
+            const main_ = document.getElementById ("main").style;
+            const character = document.getElementById ("characters").style;
+            const setting = document.getElementById ("setting").style;
+            const plot = document.getElementById ("plot").style;
+            const theme = document.getElementById ("theme").style;
+            const reviewd = document.getElementById ("rev").style;
+            const back = document.getElementById ("back").style;
+
+            function go_back () {
+                review.marginLeft = "-100%";
+                main_.marginLeft = "-100%";
+                character.marginLeft = "-100%";
+                setting.marginLeft = "-100%";
+                plot.marginLeft = "-100%";
+                theme.marginLeft = "-100%";
+                rev.marginLeft = "-100%";
+                back.opacity = "0.0";
+            }
+
+            function reviews () {
+                review.marginLeft = "0px";
+                back.opacity = "1.0";
+            }
+
+            function main () {
+                main_.marginLeft = "0px";
+                back.opacity = "1.0";
+            }
+
+            function characters () {
+                character.marginLeft = "0px";
+                back.opacity = "1.0";
+            }
+
+            function settings () {
+                setting.marginLeft = "0px";
+                back.opacity = "1.0";
+            }
+
+            function plotey () {
+                plot.marginLeft = "0px";
+                back.opacity = "1.0";
+            }
+
+            function themey () {
+                theme.marginLeft = "0px";
+                back.opacity = "1.0";
+            }
+
+            function rev () {
+                reviewd.marginLeft = "0px";
+                back.opacity = "1.0";
+            }
+            
+        </script>
+	</body>
+</html>
