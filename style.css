@@ -4,11 +4,8 @@
 }
 
 #eee {
-	margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+transform:scale(0.75); 
+-webkit-transform:scale(0.9);
 }
 
 html, body {
