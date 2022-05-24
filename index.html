@@ -30,11 +30,11 @@
             <br>
             <h1>Review</h1>
             <br>
-            <form name = "review" method = "POST" netlify netlify-honeypot = "ceMs23$@" data-netlify-recaptcha="true">
-		<input name="ceMs23$@" type = "hidden" style = "display:none;" />
-                <input placeholder = "Name.." id = "name"required />
+            <form name = "review" method = "POST" netlify netlify-honeypot = "Hidden Spam Field" data-netlify-recaptcha="true" onsubmit = "submitted">
+		<input name="Hidden Spam Field" type = "hidden" style = "display:none;" />
+                <input name = "Name:" placeholder = "Name.." id = "name"required />
                 <br>
-                <textarea placeholder="Review.." id = "review.." required></textarea>
+                <textarea name = "Review:" placeholder="Review.." id = "review.." required></textarea>
                 <br>
                 <br>
                 <button id = "post" onclick = "protect()">Send to me!</button>
