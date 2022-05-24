@@ -57,7 +57,7 @@ input {
 }
 
 a {
-    cursor:pointer;
+
 }
 
 textarea {
@@ -94,7 +94,6 @@ nav {
 }
 
 #post {
-    cursor:pointer;
     height:40px;
     border:black solid 1px;
     border-radius:5px;
