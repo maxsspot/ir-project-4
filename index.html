@@ -30,14 +30,14 @@
             <br>
             <h1>Review</h1>
             <br>
-            <form name = "Reviews" method = "POST" netlify netlify-honeypot = "Hidden Spam Field" data-netlify-recaptcha="true" onsubmit = "submitted">
+            <form name = "Reviews" method = "POST" netlify netlify-honeypot = "Hidden Spam Field" data-netlify-recaptcha="true" action = "submitted">
 		<input name="Hidden Spam Field" type = "hidden" style = "display:none;" />
                 <input name = "Name:" placeholder = "Name.." id = "name"required />
                 <br>
                 <textarea name = "Review:" placeholder="Review.." id = "review.." required></textarea>
                 <br>
                 <br>
-                <button id = "post" onclick = "protect()">Send to me!</button>
+                <button id = "post">Send to me!</button>
 		    <br>
 		    <br>
 		    <div id = "eee"><div data-netlify-recaptcha="true" style="display: inline-block;"></div></div>
@@ -94,11 +94,6 @@
             const theme = document.getElementById ("theme").style;
             const reviewd = document.getElementById ("rev").style;
             const back = document.getElementById ("back").style;
-	    var hello = localStorage.getItem ("submitted");
-		
-	    if (hello.value = "yes") {
-		    document.getElementById ("post").disabled = true;
-	    }
 
             function go_back () {
                 review.marginLeft = "-100%";
@@ -145,10 +140,6 @@
                 reviewd.marginLeft = "0px";
                 back.opacity = "1.0";
             }
-            
-	    function protect () {
-		locaslStorage.setItem ("submitted","yes");    
-	    }
         </script>
 	</body>
 </html>
