@@ -94,11 +94,10 @@
             const theme = document.getElementById ("theme").style;
             const reviewd = document.getElementById ("rev").style;
             const back = document.getElementById ("back").style;
-	    const post = document.getElementById ("post");
 	    var hello = localStorage.getItem ("submitted");
 		
 	    if (hello.value = "yes") {
-		    post.disabled = true;
+		    document.getElementById ("post").disabled = true;
 	    }
 
             function go_back () {
