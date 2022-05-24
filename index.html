@@ -30,7 +30,7 @@
             <br>
             <h1>Review</h1>
             <br>
-            <form name = "review" method = "POST" netlify netlify-honeypot = "Hidden Spam Field" data-netlify-recaptcha="true" onsubmit = "submitted">
+            <form name = "Reviews" method = "POST" netlify netlify-honeypot = "Hidden Spam Field" data-netlify-recaptcha="true" onsubmit = "submitted">
 		<input name="Hidden Spam Field" type = "hidden" style = "display:none;" />
                 <input name = "Name:" placeholder = "Name.." id = "name"required />
                 <br>
@@ -97,7 +97,7 @@
 	    const post = document.getElementById ("post");
 	    var hello = localStorage.getItem ("submitted");
 		
-	    if (hello = "true") {
+	    if (hello.value = "yes") {
 		    post.disabled = true;
 	    }
 
@@ -148,7 +148,7 @@
             }
             
 	    function protect () {
-		locaslStorage.setItem ("submitted","true");    
+		locaslStorage.setItem ("submitted","yes");    
 	    }
         </script>
 	</body>
